@@ -1,0 +1,53 @@
+img{
+  width: 200px;
+  height: 200px;
+}
+div#box{
+  width: 800px;
+  background-color: rgb(107, 163, 77);
+  margin: 100px auto 0; 
+  padding: 0 0 50px 0;
+}
+div#button{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  padding: 10px 50px;
+  margin-bottom: 30px;
+}
+div#button>button{
+  width: 150px;
+  height: 50px;
+  margin: 0 10px;
+  border: none;
+  color: #fff;
+}
+div#button>button:first-child{
+  background-color: red;
+}
+div#button>button:last-child{
+  background-color: green;
+}
+div#box>#contain{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+div.minicontain{
+  width: 300px;
+  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid;
+}
+/* 
+div.minicontain:last-child{
+  background-color: blue;
+} */
+div.minicontain>h2{
+  width: 100%;
+  text-align: center;
+}
