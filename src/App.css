@@ -1,10 +1,17 @@
+html{
+  background: url('./image/image.jpg') 100%;
+}
 img{
   width: 200px;
   height: 200px;
 }
+h1{
+  font-family: 'Nabla', cursive;
+}
 div#box{
   width: 800px;
-  background-color: rgb(107, 163, 77);
+  background-color: #7c01b185;
+  /* opacity: 70%; */
   margin: 100px auto 0; 
   padding: 0 0 50px 0;
 }
@@ -13,7 +20,6 @@ div#button{
   display: flex;
   justify-content:center;
   padding: 10px 50px;
-  margin-bottom: 30px;
 }
 div#button>button{
   width: 150px;
@@ -21,12 +27,18 @@ div#button>button{
   margin: 0 10px;
   border: none;
   color: #fff;
+  font-family: 'Bungee Spice', cursive;
+  font-size: 20px;
 }
 div#button>button:first-child{
-  background-color: red;
+  background-color: #fff;
 }
 div#button>button:last-child{
   background-color: green;
+}
+div#button>button:nth-of-type(2){
+  display: none;
+  background-color: black;
 }
 div#box>#contain{
   margin: 0 auto;
@@ -34,6 +46,11 @@ div#box>#contain{
   flex-wrap: wrap;
   justify-content: center;
 }
+div#box>#contain>h1{
+  display: flex;
+  align-items: center;
+}
+
 div.minicontain{
   width: 300px;
   margin: 0 30px;
@@ -41,13 +58,28 @@ div.minicontain{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border: 1px solid;
+  border: none;
+  background-color: #fff;
 }
 /* 
 div.minicontain:last-child{
   background-color: blue;
 } */
+div#contain>h2:first-of-type{
+  width: 100%; 
+  font-family: 'Bungee Spice', cursive;
+  text-align: center;
+  font-size: 30px;
+}
 div.minicontain>h2{
   width: 100%;
   text-align: center;
+  font-family: 'Stylish';
+  color: red;
+}
+div.minicontain>h2:first-of-type {
+    font-family: 'Bungee Spice', cursive;
+}
+div.minicontain>h2:last-of-type{
+    color: blue;
 }
